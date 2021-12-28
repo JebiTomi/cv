@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reference.html">Reference</a></li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <h1>Contact Us!</h1>
+    <form method="get" autocomplete="on">
+      <table>
+        <tr>
+          <td>Name</td>
+          <td><label for="fname">First Name</label></td>
+          <td><label for="lname">Last Name</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" id="fname" name="fname" required></td>
+          <td><input type="text" id="lname" name="lname" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="birthdate">Birthdate</label></td>
+          <td><label for="gender">Gender</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="date" name="birthdate" value="" required></td>
+          <td><input list="genderList" name="gender" id="gender" placeholder="Select your gender!"required>
+            <datalist id="genderList">
+              <option value="Female">
+              <option value="Male">
+              <option value="Other">
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><label for="strAddres">Street Address</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2"><input type="text" id="strAddres" name="strAddres" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="cityAddres">City</label></td>
+          <td><label for="strAddres">State / Province</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" id="cityAddres" name="city" required></td>
+          <td><input type="text" id="stateAddres" name="state" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><label for="zipCode">Postal / Zip Code</label></td>
+          <td><label for="country">Country</label></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="text" id="zipCode" name="zipCode" required></td>
+          <td><input type="text" id="country" name="country" required></td>
+        </tr>
+        <tr>
+          <td>E-mail address:</td>
+          <td><input type="email" id="emailAddress" name="emailAddress" placeholder="youremailaddres@example.com" required></td>
+        </tr>
+        <tr>
+          <td>Phone number</td>
+          <td><input type="tel" id="phone" name="phone" placeholder="06101234567" required></td>
+        </tr>
+        <tr>
+          <td>Signature</td>
+        </tr>
+        <tr>
+          <td colspan="3"><textarea name="message" rows="10" cols="60" placeholder="You can write here!"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="checkbox" name="aszf" value="aszf" required>
+          <label for="aszf">Elfogadom az Általános szerződési feltételeket</label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="checkbox" name="gdpr" value="gdpr" required>
+          <label for="gdpr">Elfogadom a GDPR feltételeket.</label></td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Submit"></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
